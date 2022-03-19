@@ -1,0 +1,14 @@
+/* Selector de elemento*/
+h1,h3,p{
+    text-align: center;
+}
+
+/* Selector de ID */
+#tabla_mascotas{
+    text-align: center;
+}
+
+/* Selector de clase */
+.derecha{
+    text-align: right;
+}
