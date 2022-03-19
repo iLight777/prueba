@@ -1,0 +1,23 @@
+p{
+    text-align: center;
+    font-size: 28px;
+}
+
+#color_rojo { /* selector de id añade estylo o color a la id donde se ocupe en la pagina de html */
+    color: red;
+    margin: 20px;
+    border: 3px solid;
+    border-color: aqua;
+}
+
+.centrado{  /* la clase que empiece con . es para enlazar a la pagina html que tenga  (class)*/
+    text-align: right;
+    margin-top: 550px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px; solid green;
+    padding: 10px;
+}
