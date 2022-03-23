@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 *{ /* Para seleccionar todo el archivo*/
    margin: 0;
@@ -29,7 +30,7 @@ ul{
     list-style: none;
 }
 /* todas las listas */
-ul li{
+ul li {
     width: 100%; /* ancho */
     height: 50px; /* altura*/
     line-height: 50px; /* margen del texto*/
@@ -37,7 +38,15 @@ ul li{
     font-size: 22px; /* tamaño texto*/
     display: block; /**/
     background-color: rgba(0,0,0,0.7); /*color de fondo (el rgba se pueden hacer transparencias*/
+}
+
+ul li a { /* se intenta llegar a la sub lista para que tengan diferenten formato*/
+    text-decoration: none;
     color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    display: block;
 }
 
 ul li:hover{ /* cuando se pase el raton por esima de las listas "efecto color" */
@@ -47,12 +56,14 @@ ul li:hover{ /* cuando se pase el raton por esima de las listas "efecto color" *
 ul li ul li{  /* ocultar la lista para que despues se muestre como desplegable*/
     display: none; /*ocualta el submenu*/
 }
-
 ul li:hover ul li{ /* cuando se pase el raton por el nivel de arriba ul li, entonces ul li se mostrara*/
-    display: block;/*muestra el submenu*/
+    display: block; /*muestra el submenu*/
 }   
 
-h1{
-    font-family: 'Lato', sans-serif;
+ul li:hover ul li a{ /* se intenta llegar a la sub lista para que tengan diferenten formato*/
+    font-family: 'Lato', sans-serif; /* tipo de fuente*/
+    font-weight: normal; 
+    font-size:  20px;
+    
 }
 
