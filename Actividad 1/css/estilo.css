@@ -12,6 +12,10 @@ body{
     background-repeat: no-repeat; /* elemento para no repetir la imagen cuando se agranda o achica la ventana*/
     background-size: cover; /* centrado*/
 }
+/* Aqui estamos diciendo que la barra  menu desplazadora de top quede adelante de la igamen del slider */
+.header{
+    z-index: 10;
+}
 
 .header ul {
     display: flex; /* para colocar elementos horizontales*/
@@ -127,7 +131,38 @@ ul li:hover ul li a{ /* se intenta llegar a la sub lista para que tengan diferen
 /**/
 
 .slider li:target{/* ESTA PARTE LE ESTAMOS DICIENDO QUE ACCEDEMOS A LOS ID DE CADA GATO Y A CADA GATO 
-                     LE DAMOS UNA*/
-    opacity: 1;                 
+                     LE DAMOS UNA ORDEN QUE LO MUESTRE CON OPACITY*/
+    opacity: 1;                
 
 }
+
+.lorem ul h2 p {
+    margin-top: 10px;
+    margin-left: 500px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 40px;
+    color: rgb(39, 20, 20);
+/*---------------BARRA TRANSPARENTE----------------------------*/
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+    padding-left: 10px;
+    width:fit-content;
+    padding-bottom: 8px;
+    border-radius: 10px;
+}
+.titulo ul h1 p {
+    margin-top: 100px;
+    margin-left: 500px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 40px;
+    color: rgb(39, 20, 20);
+/*---------------BARRA TRANSPARENTE----------------------------*/
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+    padding-left: 10px;
+    width:fit-content;
+    padding-bottom: 8px;
+    border-radius: 10px;
+}    
