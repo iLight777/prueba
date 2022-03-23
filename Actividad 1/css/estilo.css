@@ -1,23 +1,39 @@
-p{
-    text-align: center;
-    font-size: 28px;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&display=swap');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url("./Imagenes/background.jpg");/* colocar imagen de fondo */
+    background-repeat: no-repeat; /* elemento para no repetir la imagen cuando se agranda o achica la ventana*/
+    background-size: cover; /* centrado*/
 }
 
-#color_rojo { /* selector de id añade estylo o color a la id donde se ocupe en la pagina de html */
-    color: red;
-    margin: 20px;
-    border: 3px solid;
-    border-color: aqua;
+.header ul {
+    display: flex; /* para colocar elementos horizontales*/
+    justify-content: space-around; /* deja espacios horizontalmente en los elementos */
+    align-items: center; /* centrar objetos */
 }
 
-.centrado{  /* la clase que empiece con . es para enlazar a la pagina html que tenga  (class)*/
-    text-align: right;
-    margin-top: 550px;
+/*sub lista */
+.header ul li ul{
+    display: flex;
+    flex-direction: column; /* alinear lista veticalmente */
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-    
-    padding: 10px;
+/* todas las listas */
+ul{
+    list-style: none;
+}
+/* todas las listas */
+ul li{
+    width: 100%; /* ancho */
+    height: 50px; /* altura*/
+    line-height: 50px; /* margen del texto*/
+    text-align: center; /* centrado*/
+    font-size: 22px; /* tamaño texto*/
+    display: block; /**/
+    background-color: rgba(0,0,0,0.7); /*color de fondo (el rgba se pueden hacer transparencias*/
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
 }
