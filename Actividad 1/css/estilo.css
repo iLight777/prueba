@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    background-image: url("./Imagenes/background.jpg");/* colocar imagen de fondo */
+    background-image: url("./imagenes/background.jpg");/* colocar imagen de fondo */
     background-repeat: no-repeat; /* elemento para no repetir la imagen cuando se agranda o achica la ventana*/
     background-size: cover; /* centrado*/
 }
@@ -66,4 +66,61 @@ ul li:hover ul li a{ /* se intenta llegar a la sub lista para que tengan diferen
     font-size:  20px;
     
 }
+/*---------------------------------------------------------------------------------------------------*/
+.container{ /* clase container que contiene el menu desplegable y el slider con botones*/
+    display: flex; /* */
+    flex-direction: column; /*alinea la columna*/
+    justify-content: space-between;
+    height: 100vh;
+}
+/* ajuste de imagenes*/
+/* NOTA ! PARA CONSEGUIR EL SLIDER SE VA DEJAR TODAS LAS IMAGENES TRANSPARENTES MENOS LA PRIMERA LA CONSEGUIR
+    EL EFECTO NECESARIO*/
 
+
+.central{ /* clase hijo slider*/
+    width: 60%; /*desplazamiento de imagen en su casilla*/
+    margin: auto; /*centrado de imagen*/
+    background-color: transparent;
+
+}
+
+.slider{ /* clase padre*/ 
+    position: relative; 
+    width: 100%; /*anchura*/
+    height: 400px; /*altura*/
+
+    
+}
+
+.slider li{ /* clase hijo de slider*/
+    position: absolute; /* Este paso es para que la imagen quede traslapada*/
+    left: 0;
+    top: 0;
+    opacity: 0; /* para hacer transparente las imagenes*/
+    width: inherit; /* cada foto va tener el mismo tamaño que su contenerdor , 
+        asi hereda la misma anchura de su padre slider */
+    height: inherit; /* cada foto va tener el mismo tamaño que su contenerdor , 
+    asi hereda la misma altura de su padre slider */  
+    transition: opacity 1s; /* AÑADE LA TRANSICION A LA IMAGEN */
+}
+    
+.slider li img{
+    width: 100%; /*anchura % para que que abarque todo su bloque de la lista*/
+    height: 550px; /* altura*/
+    object-fit: cover; /* cubre la anchura de su contendor */
+}
+
+/*Mostrar la primera foto*/
+
+.slider li:first-child{ /* ESTA PARTE LE ESTANOS DICIENDO QUE ACCEDA AL PRIMER SLIDER DE, QUE EQUIVALE
+                               id="slider_1"><img src="./css/imagenes/gato1.jpg" alt=""></li>  */
+    opacity: 1;                           
+
+}
+/*Posicionar Botones*/
+.botones{
+    margin-top: 200px; /*Para dar una distancia entre la imagen y los botones*/
+    display: flex; /* alinea los botones por defecto horizontalmente*/
+    justify-content: center; /*este elemento es por si se muebe la pantalla*/
+}
