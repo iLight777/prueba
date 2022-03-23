@@ -140,7 +140,6 @@ ul li:hover ul li a{ /* se intenta llegar a la sub lista para que tengan diferen
     margin-top: 10px;
     margin-left: 500px;
     text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
     line-height: 40px;
     color: rgb(39, 20, 20);
 /*---------------BARRA TRANSPARENTE----------------------------*/
@@ -155,7 +154,6 @@ ul li:hover ul li a{ /* se intenta llegar a la sub lista para que tengan diferen
     margin-top: 100px;
     margin-left: 500px;
     text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
     line-height: 40px;
     color: rgb(39, 20, 20);
 /*---------------BARRA TRANSPARENTE----------------------------*/
@@ -165,4 +163,15 @@ ul li:hover ul li a{ /* se intenta llegar a la sub lista para que tengan diferen
     width:fit-content;
     padding-bottom: 8px;
     border-radius: 10px;
+}
+.traba ul p{
+    /*---------------BARRA TRANSPARENTE----------------------------*/
+        background-color: rgba(255, 255, 255, 0.5);
+        padding-top: 10px;
+        padding-left: 10px;
+        width:fit-content;
+        padding-bottom: 8px;
+        border-radius: 10px;
+
+        
 }    

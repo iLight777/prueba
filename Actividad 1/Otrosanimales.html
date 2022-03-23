@@ -11,39 +11,58 @@
 
 </head>
 <body>
-    
-    <div class="header">
-        <ul>
-            <li>
-                <a href="index.html">INICIO</a>  
-                <ul>
-                    <li> <a href="Perros.html">Perros</a></li> <!-- <a href=""></a>  para hacer que el textl perro ejemplo sea clicleable--> 
-                    <li> <a href="Gatos.html">Gatos</a></li>
-                    <li> <a href="#">Otros Animales</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">CONOCENOS</a> 
-                <ul>
-                    <li> <a href="#">Sobre nuestra ONG</a></li>
-                    <li> <a href="#">Adopta un animal</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">CONTACTO</a> 
-                <ul>
-                    <li> <a href="#">Visite nuestro refugio</a></li>
-                    <li> <a href="#">Agente una visita</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="principal">
-        <ul>
-           
-        </ul>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li>
+                    <a href="index.html">INICIO</a>  
+                    <ul>
+                        <li> <a href="Perros.html">Perros</a></li> <!-- <a href=""></a>  para hacer que el textl perro ejemplo sea clicleable--> 
+                        <li> <a href="Gatos.html">Gatos</a></li>
+                        <li> <a href="#">Otros Animales</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CONOCENOS</a> 
+                    <ul>
+                        <li> <a href="Sbrnuestraong.html">Sobre nuestra ONG</a></li>
+                        <li> <a href="adoptnaimal.html">Adopta un animal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CONTACTO</a> 
+                    <ul>
+                        <li> <a href="vistrefugio.html">Visite nuestro refugio</a></li>
+                        <li> <a href="agendvisita.html">Agente una visita</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="central">
+            
+            <ul class="slider"> <!-- identificar ul con una clase slider para que sea mas facil ubicarlo en css-->
+                
+                <!-- se agrego un id="slider como identificador para que cuando en los BOTONES
+                se seleccion slider 1 = Pelusa seleccione id="slider_1"><img src="./css/imagenes/otro1.jpg"
+                y muestra la imagen en cuestion-->
+                <li id="slider_1"><img src="./css/imagenes/otro1.jpg" alt=""></li>
+                <li id="slider_2"><img src="./css/imagenes/otro2.jpg" alt=""></li>
+                <li id="slider_3"><img src="./css/imagenes/otro3.jpg" alt=""></li>
+                <li id="slider_4"><img src="./css/imagenes/otro4.jpg" alt=""></li>
+            </ul>
+            <ul class="botones"> <!--indentificar ul con una clase botones para ubicar mas facil en css-->
+                
+                <li><a href="#slider_1">VACA DE CHOCOLATE</a></li>
+                <li><a href="#slider_2">EL PUDU</a></li>
+                <li><a href="#slider_3">HURON MASTER</a></li>
+                <li><a href="#slider_4">DUNCAN</a></li>
+            </ul>
+        </div>
 
     </div>
+    
+
+    
 
 
 </body>
