@@ -40,9 +40,17 @@ ul li{
     color: white;
 }
 
-ul li:hover{
+ul li:hover{ /* cuando se pase el raton por esima de las listas "efecto color" */
     background-color: rgba(231,128,23,0.5);
 }
+
+ul li ul li{  /* ocultar la lista para que despues se muestre como desplegable*/
+    display: none; /*ocualta el submenu*/
+}
+
+ul li:hover ul li{ /* cuando se pase el raton por el nivel de arriba ul li, entonces ul li se mostrara*/
+    display: block;/*muestra el submenu*/
+}   
 
 h1{
     font-family: 'Lato', sans-serif;
