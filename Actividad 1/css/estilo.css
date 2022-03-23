@@ -124,3 +124,10 @@ ul li:hover ul li a{ /* se intenta llegar a la sub lista para que tengan diferen
     display: flex; /* alinea los botones por defecto horizontalmente*/
     justify-content: center; /*este elemento es por si se muebe la pantalla*/
 }
+/**/
+
+.slider li:target{/* ESTA PARTE LE ESTAMOS DICIENDO QUE ACCEDEMOS A LOS ID DE CADA GATO Y A CADA GATO 
+                     LE DAMOS UNA*/
+    opacity: 1;                 
+
+}
