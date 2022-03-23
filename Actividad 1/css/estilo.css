@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&display=swap');
 
+*{ /* Para seleccionar todo el archivo*/
+   margin: 0;
+   padding: 0; 
+}
+
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-image: url("./Imagenes/background.jpg");/* colocar imagen de fondo */
@@ -32,8 +37,14 @@ ul li{
     font-size: 22px; /* tamaño texto*/
     display: block; /**/
     background-color: rgba(0,0,0,0.7); /*color de fondo (el rgba se pueden hacer transparencias*/
+    color: white;
+}
+
+ul li:hover{
+    background-color: rgba(231,128,23,0.5);
 }
 
 h1{
     font-family: 'Lato', sans-serif;
 }
+
